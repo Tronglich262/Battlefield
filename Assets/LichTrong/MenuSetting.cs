@@ -8,7 +8,7 @@ public class MenuSetting : MonoBehaviour
    
     public void Play()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Characterselect");
     }
     public void characterslect()
     {
@@ -16,16 +16,16 @@ public class MenuSetting : MonoBehaviour
     }
     public void Setting()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene("Settings");
     }
 
     public void Extras()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("Extras");
     }
     public void Exit()
     {
-        SceneManager.LoadScene(2);
+        Application.Quit();
     }
 
     public void ExitMenu()

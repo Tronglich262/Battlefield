@@ -14,7 +14,7 @@ public class dangkytaikhoan : MonoBehaviour
 
 
     public Button chuyendn;
-    public GameObject dangky;
+    public GameObject dangky, dangnhap;
 
     public void dangkybutton()
     {
@@ -49,6 +49,7 @@ public class dangkytaikhoan : MonoBehaviour
     public void SwitchForm()
     {
         dangky.SetActive(!dangky.activeSelf);
+        dangnhap.SetActive(!dangnhap.activeSelf);
     }
     void Start()
     {

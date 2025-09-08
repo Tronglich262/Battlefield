@@ -18,18 +18,18 @@ public class chonmap : MonoBehaviour
     }
     public void map1()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("man1");
     }
     public void map2()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene("man2");
     }
     public void map3()
     {
-        SceneManager.LoadScene(10);
+        //SceneManager.LoadScene(10);
     }
     public void mapreturn()
     {
-        SceneManager.LoadScene(0);
+       // SceneManager.LoadScene(0);
     }
 }

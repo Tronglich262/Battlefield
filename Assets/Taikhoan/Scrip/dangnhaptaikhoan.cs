@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,7 @@ public class dangnhaptaikhoan : MonoBehaviour
     public TextMeshProUGUI thongbao;
     //chuyển đăng nhập với đăng kí
     public Button chuyendk;
-    public GameObject dangnhap;
+    public GameObject dangnhap, dangky;
 
 
 
@@ -56,7 +57,7 @@ public class dangnhaptaikhoan : MonoBehaviour
                 thongbao.text = "Đăng nhập thành công";
                 PlayerPrefs.SetString("token", get);
                 Debug.Log(get);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene("Menu");
             }
         }
     }
@@ -73,5 +74,6 @@ public class dangnhaptaikhoan : MonoBehaviour
     public void SwitchForm()
     {
         dangnhap.SetActive(!dangnhap.activeSelf);
+        dangky.SetActive(!dangky.activeSelf);
     }
 }
